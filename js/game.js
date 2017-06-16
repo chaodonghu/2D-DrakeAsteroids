@@ -12,22 +12,22 @@ var states = {
 };
 
 var graphicAssets = {
-    ship:{URL:'assets/ship2.png', name:'ship'},
-    bullet:{URL:'assets/bullet.png', name:'bullet'},
+    ship:{URL:'asset/ship.png', name:'ship'},
+    bullet:{URL:'asset/bullet.png', name:'bullet'},
 
-    asteroidLarge:{URL:'assets/asteroidLarge.png', name:'asteroidLarge'},
-    asteroidMedium:{URL:'assets/asteroidMedium.png', name:'asteroidMedium'},
-    asteroidSmall:{URL:'assets/asteroidSmall.png', name:'asteroidSmall'},
+    asteroidLarge:{URL:'asset/asteroidLarge.png', name:'asteroidLarge'},
+    asteroidMedium:{URL:'asset/asteroidMedium.png', name:'asteroidMedium'},
+    asteroidSmall:{URL:'asset/asteroidSmall.png', name:'asteroidSmall'},
 
-    background:{URL:'assets/background.png', name:'background'},
-    explosionLarge:{URL:'assets/explosionLarge.png', name:'explosionLarge', width:64, height:64, frames:8},
-    explosionMedium:{URL:'assets/explosionMedium.png', name:'explosionMedium', width:58, height:58, frames:8},
-    explosionSmall:{URL:'assets/explosionSmall.png', name:'explosionSmall', width:41, height:41, frames:8},
+    background:{URL:'asset/background.png', name:'background'},
+    explosionLarge:{URL:'asset/explosionLarge.png', name:'explosionLarge', width:64, height:64, frames:8},
+    explosionMedium:{URL:'asset/explosionMedium.png', name:'explosionMedium', width:58, height:58, frames:8},
+    explosionSmall:{URL:'asset/explosionSmall.png', name:'explosionSmall', width:41, height:41, frames:8},
 };
 
 var soundAssets = {
-    fire:{URL:['assets/fire.m4a', 'assets/fire.ogg'], name:'fire'},
-    destroyed:{URL:['assets/destroyed.m4a', 'assets/destroyed.ogg'], name:'destroyed'},
+    fire:{URL:['asset/fire.m4a', 'asset/fire.ogg'], name:'fire'},
+    destroyed:{URL:['asset/destroyed.m4a', 'asset/destroyed.ogg'], name:'destroyed'},
 };
 
 var shipProperties = {
@@ -375,7 +375,7 @@ var mainState = function(game){
 
 mainState.prototype = {
     create: function () {
-        var startInstructions = 'Click to Start -\n\nUP arrow key for thrust.\n\nLEFT and RIGHT arrow keys to turn.\n\nSPACE key to fire.';
+        var startInstructions = 'Click to Start -\n\nUP [^] for thrust.\n\nLEFT [<] and RIGHT [>] to turn.\n\nSPACE key to fire.';
 
         this.tf_start = game.add.text(game.world.centerX, game.world.centerY, startInstructions, fontAssets.counterFontStyle);
         this.tf_start.align = 'center';
