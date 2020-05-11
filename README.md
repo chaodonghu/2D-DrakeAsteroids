@@ -8,7 +8,7 @@ Built using:
 
 ## Demo
 
-* https://chaodonghu.github.io/2D-DrakeAsteroids/
+* https://chaodonghu.github.io/phaser_drake_asteroids/
 
 ## Project Screenshots
 ![](./asset/screenshot1.png)
